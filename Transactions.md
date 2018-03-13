@@ -50,7 +50,7 @@ See what happens when we try to update a row in 2 connections, please specify th
 ```
 SET TRANSACTION ISOLATION LEVEL READ COMMITTED;
 START TRANSACTION;
-UPDATE test_table SET date_of_return='2018-04-01' WHERE id=2;
+UPDATE test_table SET date_of_return=DATE_ADD(date_of_return, INTERVAL 1 DAY) WHERE id=2;
 
 ```
 
