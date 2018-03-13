@@ -59,8 +59,7 @@ Second connection:
 ```
 SET TRANSACTION ISOLATION LEVEL READ COMMITTED;
 START TRANSACTION;
-UPDATE test_table SET date_of_return='2018-04-02' WHERE id=2;
-
+SELECT * from test_table where id=2;
 ```
 
 See what happens when you commit the first transaction;
