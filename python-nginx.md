@@ -14,13 +14,10 @@ docker-compose up -d
 Use browser to go to http://localhost/app
 
 Modify the requirements.txt and the main.py script accordingly,
-redo the build process:
+after each change restart the python WSGI service:
 
 ```
-docker-compose build --no-cache
-docker-compose stop
-docker-compose rm -f
-docker-compose up -d
+docker-compose restart backend
 ```
 
 
