@@ -2,6 +2,11 @@
 
 https://docs.docker.com/install/linux/docker-ce/ubuntu/
 
+Check if the ``docker-compose`` command is available, if not - install it:
+```
+sudo pip install docker-compose
+```
+
 # Setup a simple webserver to host your application
 
 Go to the project subfolder of this repository
